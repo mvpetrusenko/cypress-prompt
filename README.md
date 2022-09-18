@@ -17,10 +17,10 @@ In IDE (PyCharm) in the terminal:
 In cypress.json file you can add some common for all tests info you want to be run before all tests: 
 
 {
-
-"baseUrl
-
+  "baseUrl": "http://localhost:3000",
+  "viewportHeight": 550,
+  "viewportWidth": 660,
+  "defaultCommandTimeout": 7000
 }
-
 
 
