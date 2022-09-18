@@ -37,7 +37,7 @@ it('open website', () => {
 
 })
 
-in.only (for running one specific test and ignoring the other tests in the file) 
+it.only (for running one specific test and ignoring the other tests in the file) 
 
 take elements from DOM (XPath, by id, class... in F12 Chrome DevTools)
 
