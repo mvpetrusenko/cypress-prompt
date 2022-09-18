@@ -33,6 +33,12 @@ http:.... - parametr/argument of function
 
 it('open website', () => { 
 
-  cy.visit('http://localhost:3000')
+  cy.visit('http://localhost:3000') OR cy.visit('/23232323') if we write the main url 'http://localhost:3000' as baseURL in the cypress.json
 
 })
+
+in.only (for running one specific test and ignoring the other tests in the file) 
+
+take elements from DOM (XPath, by id, class... in F12 Chrome DevTools)
+
+cy.get('id from DOM')
