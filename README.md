@@ -10,9 +10,11 @@ In IDE (PyCharm) in the terminal:
 6)  click the test in cypress window you want to watch 
 7)  in the preview window choose E2E test and browser (Chrome) you want to open your tests 
 8)  the preview window of our tests will be opened 
-9)  npx cypress run (for running test without opening the preview window in the browser)
+9)  to open site you want to visit in your test: in the new terminal type: npm start (click the link (http://localhost:3000) in the terminal to open site for testing)
+10)  npx cypress run (for running test without opening the preview window in the browser)
 
 
+search in Cypress documentation: on.cypress.io/should (it opens info about should (assertions))
 
 In cypress.json file you can add some common for all tests info you want to be run before all tests: 
 
@@ -23,4 +25,14 @@ In cypress.json file you can add some common for all tests info you want to be r
   "defaultCommandTimeout": 7000
 }
 
+function it with 2 parameters: test name, callback 
 
+cy - global object 
+visit - command/function
+http:.... - parametr/argument of function
+
+it('open website', () => { 
+
+  cy.visit('http://localhost:3000')
+
+})
