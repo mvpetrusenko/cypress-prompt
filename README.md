@@ -41,4 +41,6 @@ it.only (for running one specific test and ignoring the other tests in the file)
 
 take elements from DOM (XPath, by id, class... in F12 Chrome DevTools)
 
-cy.get('id from DOM')
+cy.get('id from DOM') 
+
+describe.only('Group 1' ... to run only tests within this group
